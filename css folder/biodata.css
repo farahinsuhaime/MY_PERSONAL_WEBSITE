@@ -1,21 +1,25 @@
 
 
-*{
+*
+{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-html {
+html 
+{
 	font-size: 10px;
 }
 
-body {
+body 
+{
 	background-position: 0 1000px;
 	font-family: 'Roboto', sans-serif;
 }
 
-.container {
+.container 
+{
 	max-width: 1100px;
 	margin: 0 auto;
 	padding: 0 3rem;
@@ -23,7 +27,8 @@ body {
 	text-align: center;
 }
 
-h1 {
+h1 
+{
 	font-family: georgia;
 	color: black;
 	background-color: floralwhite;
@@ -32,7 +37,8 @@ h1 {
 	letter-spacing: 0.2cm;
 }
 
-h2 {
+h2 
+{
 	font-family: Georgia;
 	color: black;
 	font-size: 23px;
@@ -41,7 +47,8 @@ h2 {
 }
 
 
-p{
+p
+{
 	font-size: 20px;
 	color: black;
 	line-height: 5rem;
