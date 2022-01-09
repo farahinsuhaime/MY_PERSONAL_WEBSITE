@@ -1,0 +1,116 @@
+:root 
+{
+    --primary: #90ff90;
+}
+
+body 
+{
+    background-color: #1b1b1b;
+    color: white;
+}
+
+.header 
+{
+    text-align: center;
+    margin: auto;
+    max-width: 50vh;
+    padding-block: 48px;
+    margin-bottom: 48px;
+    border-bottom: 2px dashed var(--primary);
+    color: #80B9DF;
+    font-size: 32px;
+    letter-spacing: 4px;
+}
+
+section 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.family 
+{
+    width: 320px;
+    height: 480px;
+    overflow: hidden;
+    margin: 8px;
+    border: 2px solid var(--primary);
+    border-radius: 16px;
+    position: relative;
+    background-color: #567E9A;
+}
+
+.family::before 
+{
+    content: '';
+    background-image: var(--img);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    filter: blur(4px) grayscale(100%);
+}
+
+.family img 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 480px;
+    border-radius: 16px;
+    z-index: 3;
+    object-fit: cover;
+    border: none;
+}
+
+.family:hover img 
+{
+    width: 160px;
+    height: 240px;
+    border: 2px solid var(--primary);
+    left: 80px;
+    top: 60px;
+}
+
+.family .info 
+{
+    background-color: #9DA5AB;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    color: black;
+    padding: 16px;
+    border-top: 8px solid var(--primary);
+    border-radius: 50% 50% 0px 0px;
+    padding-top: 80px;
+    text-align: center;
+    transform: scale(2)
+}
+
+.family .name 
+{
+    font-size: 24px;
+    padding: 16px;
+    text-transform: capitalize;
+}
+
+.family .title 
+{
+    color: black;
+    text-transform: capitalize;
+}
+
+.family:hover .info 
+{
+    transform: scale(1)
+}
+
